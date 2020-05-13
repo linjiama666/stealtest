@@ -108,9 +108,7 @@
             'finalURL': finalURL,
             'event_list': event_list
         }];
-        var d2 = new Date();
-        var x = d2 - d1;
-        console.log("Spending time:"+ x);
+        
         (function(w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
@@ -125,6 +123,9 @@
                 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-TRK9NS7');
+        var d2 = new Date();
+        var x = d2 - d1;
+        console.log("Spending time:"+ x);
     </script>
     <!-- STYLING -->
     <!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> -->
