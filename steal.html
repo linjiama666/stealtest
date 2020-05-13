@@ -89,12 +89,12 @@
         var actions = [];
         for (var i = 0; i < ls_element_url.length; i++) {
             actions.push(new Item(ls_element_url[i], ls_classes[i], ls_eid[i], ls_etxt[i], ls_did[i]));
-            /*console.log(i);
+            console.log(i);
             console.log("cil steal element_url " + actions[i]["element_url"]);
             console.log("cil steal classes " + actions[i]["classes"]);
             console.log("cil steal eid " + actions[i]["eid"]);
             console.log("cil steal etxt " + actions[i]["etxt"]);
-            console.log("cil steal did " + actions[i]["did"]);*/
+            console.log("cil steal did " + actions[i]["did"]);
         }
         console.log(actions)
         event_list = encodeActions(actions);
