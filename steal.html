@@ -43,9 +43,16 @@
             var code_dict = JSON.parse(mJson.responseText);
             //console.log(conde_dict);
             for (var i = 0; i < obj.length; i++) {
-                var act = "{\"element_url\":\"" + obj[i].element_url + "\",\"elementClasses\":\"" + obj[i].classes + "\",\"elementId\":\"" + obj[i].eid + "\",\"elementText\":\"" + obj[i].etxt + "\",\"dataanalyticsID\":\"" + obj[i].did + "\"}";
-                if (act in code_dict) {
+                //var act = "{\"element_url\":\"" + obj[i].element_url + "\",\"elementClasses\":\"" + obj[i].classes + "\",\"elementId\":\"" + obj[i].eid + "\",\"elementText\":\"" + obj[i].etxt + "\",\"dataanalyticsID\":\"" + obj[i].did + "\"}";
+                var act = obj[i].element_url;
+                var act2 = obj[i].classes;
+                var act3 = obj[i].eid;
+                var act4 = obj[i].etxt;
+                var act5 = obj[i].did;
+            
+                if (act in code_dict && act2 in code_dict && act3 in code_dict && act4 in code_dict && act5 in code_dict) {
                     event_list.push(code_dict[act]);
+                
                 }
             }
             //console.log(event_list);
