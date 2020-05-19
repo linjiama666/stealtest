@@ -43,12 +43,12 @@
             var code_dict = JSON.parse(mJson.responseText);
             //console.log(conde_dict);
             for (var i = 0; i < obj.length; i++) {
-                //var act = "{\"element_url\":\"" + obj[i].element_url + "\",\"elementClasses\":\"" + obj[i].classes + "\",\"elementId\":\"" + obj[i].eid + "\",\"elementText\":\"" + obj[i].etxt + "\",\"dataanalyticsID\":\"" + obj[i].did + "\"}";
-                var act = obj[i].element_url;
-                var act2 = obj[i].classes;
-                var act3 = obj[i].eid;
-                var act4 = obj[i].etxt;
-                var act5 = obj[i].did;
+                var act = "{\"element_url\":\"" + obj[i].element_url + "\",\"elementClasses\":\"" + obj[i].classes + "\",\"elementId\":\"" + obj[i].eid + "\",\"elementText\":\"" + obj[i].etxt + "\",\"dataanalyticsID\":\"" + obj[i].did + "\"}";
+                //var act = obj[i].element_url;
+                //var act2 = obj[i].classes;
+                //var act3 = obj[i].eid;
+                //var act4 = obj[i].etxt;
+                //var act5 = obj[i].did;
                 console.log(obj[i].classes)
                 console.log(code_dict[i])
                 console.log(code_dict["elementId"])
